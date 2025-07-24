@@ -111,10 +111,10 @@ const Index = () => {
                   <Icon name="GraduationCap" size={24} />
                 </div>
                 <CardTitle>Повышение квалификации</CardTitle>
-                <CardDescription>Диплом с внесением в ФИС ФРДО</CardDescription>
+                <CardDescription>Удостоверение с внесением в ФИС ФРДО</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-medical-gray">Оформляем диплом повышения квалификации с официальным внесением в федеральную информационную систему.</p>
+                <p className="text-medical-gray">Оформляем удостоверение о повышении квалификации с официальным внесением в федеральную информационную систему.</p>
               </CardContent>
             </Card>
 
@@ -150,45 +150,31 @@ const Index = () => {
       {/* Advantages */}
       <section id="advantages" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="/img/b5486f9b-fa76-4e45-905f-905b93ac3db0.jpg" 
-                alt="Медицинские документы" 
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold text-medical-dark mb-8">Почему выбирают нас</h2>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-medical-green text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Icon name="Check" size={16} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-2">Официальная лицензия</h3>
-                    <p className="text-medical-gray">Работаем на основании образовательной лицензии. Все документы имеют юридическую силу.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="bg-medical-green text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Icon name="Check" size={16} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-2">Персональный менеджер</h3>
-                    <p className="text-medical-gray">За каждым клиентом закрепляется персональный менеджер, который ведет процесс от начала до конца.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="bg-medical-green text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Icon name="Check" size={16} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-2">Поддержка 24/7</h3>
-                    <p className="text-medical-gray">Консультируем и отвечаем на вопросы в любое время. Решаем проблемы оперативно.</p>
-                  </div>
-                </div>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-medical-dark mb-4">Почему выбирают нас</h2>
+            <p className="text-xl text-medical-gray">Более 500 довольных медицинских работников</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-medical-green text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Award" size={24} />
               </div>
+              <h3 className="font-bold text-lg mb-2">Официальная лицензия</h3>
+              <p className="text-medical-gray">Работаем на основании образовательной лицензии. Все документы имеют юридическую силу.</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-medical-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="User" size={24} />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Персональный менеджер</h3>
+              <p className="text-medical-gray">За каждым клиентом закрепляется персональный менеджер, который ведет процесс от начала до конца.</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-medical-green text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="MessageCircle" size={24} />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Поддержка 24/7</h3>
+              <p className="text-medical-gray">Консультируем и отвечаем на вопросы в любое время. Решаем проблемы оперативно.</p>
             </div>
           </div>
         </div>
@@ -198,28 +184,28 @@ const Index = () => {
       <section id="prices" className="py-16 bg-medical-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-medical-dark mb-4">Прозрачные цены</h2>
+            <h2 className="text-4xl font-bold text-medical-dark mb-4">Наши цены</h2>
             <p className="text-xl text-medical-gray">Никаких скрытых платежей</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <Card>
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Базовый</CardTitle>
-                <div className="text-4xl font-bold text-medical-blue mt-4">15 000 ₽</div>
-                <CardDescription>Для врачей</CardDescription>
+                <CardTitle className="text-2xl">Курс повышения квалификации</CardTitle>
+                <div className="text-4xl font-bold text-medical-blue mt-4">8 000 ₽</div>
+                <CardDescription>144 часа</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-medical-green" size={16} />
-                  <span>Диплом повышения квалификации</span>
+                  <span>Удостоверение о повышении квалификации</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-medical-green" size={16} />
-                  <span>Заполнение заявления</span>
+                  <span>Внесение в ФИС ФРДО</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-medical-green" size={16} />
-                  <span>Подготовка портфолио</span>
+                  <span>Дистанционное обучение</span>
                 </div>
                 <Button className="w-full mt-6 bg-medical-blue hover:bg-blue-700">Выбрать</Button>
               </CardContent>
@@ -228,22 +214,22 @@ const Index = () => {
             <Card className="border-medical-blue border-2 relative">
               <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-medical-blue">Популярный</Badge>
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Стандартный</CardTitle>
-                <div className="text-4xl font-bold text-medical-blue mt-4">25 000 ₽</div>
-                <CardDescription>Для среднего мед. персонала</CardDescription>
+                <CardTitle className="text-2xl">Полное сопровождение аккредитации</CardTitle>
+                <div className="text-4xl font-bold text-medical-blue mt-4">8 000 ₽</div>
+                <CardDescription>Все документы</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-medical-green" size={16} />
-                  <span>Все из базового пакета</span>
+                  <span>Заполнение заявления</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-medical-green" size={16} />
-                  <span>Отчет о проф. деятельности</span>
+                  <span>Подготовка портфолио</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-medical-green" size={16} />
-                  <span>Консультации эксперта</span>
+                  <span>Отчет о профессиональной деятельности</span>
                 </div>
                 <Button className="w-full mt-6 bg-medical-blue hover:bg-blue-700">Выбрать</Button>
               </CardContent>
@@ -251,22 +237,22 @@ const Index = () => {
 
             <Card>
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Премиум</CardTitle>
-                <div className="text-4xl font-bold text-medical-blue mt-4">35 000 ₽</div>
-                <CardDescription>Полное сопровождение</CardDescription>
+                <CardTitle className="text-2xl">Периодическая аккредитация под ключ</CardTitle>
+                <div className="text-4xl font-bold text-medical-blue mt-4">15 000 ₽</div>
+                <CardDescription>От А до Я</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-medical-green" size={16} />
-                  <span>Все из стандартного</span>
+                  <span>Удостоверение о повышении квалификации</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Icon name="Check" className="text-medical-green" size={16} />
+                  <span>Полное сопровождение аккредитации</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Check" className="text-medical-green" size={16} />
                   <span>Персональный менеджер</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="Check" className="text-medical-green" size={16} />
-                  <span>Поддержка 24/7</span>
                 </div>
                 <Button className="w-full mt-6 bg-medical-blue hover:bg-blue-700">Выбрать</Button>
               </CardContent>
