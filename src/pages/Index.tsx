@@ -261,6 +261,83 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Statistics */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-medical-dark mb-4">Отчетность для регулирующих органов</h2>
+            <p className="text-xl text-medical-gray">Автоматизированная система учета и формирования отчетов</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="text-center p-8">
+              <div className="mb-4">
+                <Icon name="Users" className="text-medical-blue mx-auto mb-2" size={32} />
+                <h3 className="text-lg font-semibold text-medical-gray mb-2">Всего специалистов</h3>
+              </div>
+              <div className="text-4xl font-bold text-medical-blue mb-2">2,847</div>
+              <div className="text-sm text-green-600">+12% за квартал</div>
+            </Card>
+            
+            <Card className="text-center p-8">
+              <div className="mb-4">
+                <Icon name="CheckCircle" className="text-medical-green mx-auto mb-2" size={32} />
+                <h3 className="text-lg font-semibold text-medical-gray mb-2">Аккредитовано</h3>
+              </div>
+              <div className="text-4xl font-bold text-medical-green mb-2">2,614</div>
+              <div className="text-sm text-medical-gray">91.8% от общего числа</div>
+            </Card>
+            
+            <Card className="text-center p-8">
+              <div className="mb-4">
+                <Icon name="Clock" className="text-orange-500 mx-auto mb-2" size={32} />
+                <h3 className="text-lg font-semibold text-medical-gray mb-2">В процессе</h3>
+              </div>
+              <div className="text-4xl font-bold text-orange-500 mb-2">233</div>
+              <div className="text-sm text-medical-gray">Завершение до 31.12.2024</div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Audit Section */}
+      <section className="py-20 bg-gradient-to-r from-medical-blue via-blue-600 to-medical-green text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <Icon name="FileCheck" className="mx-auto text-white mb-4" size={48} />
+            </div>
+            <h2 className="text-5xl font-bold mb-4">
+              Приступаем к работе только после <span className="text-blue-200">бесплатного аудита</span>
+            </h2>
+            <h3 className="text-2xl text-blue-200 mb-8">ваших документов</h3>
+            <p className="text-xl mb-12 text-blue-100 max-w-3xl mx-auto">
+              Оставьте заявку и мы свяжемся с вами в течение 15 минут. Обсудим ваши документы, 
+              возможности и сроки рассрочки, предложим оптимальный вариант сотрудничества.
+            </p>
+            
+            <div className="max-w-2xl mx-auto">
+              <div className="flex flex-col sm:flex-row gap-4 mb-6">
+                <input 
+                  className="flex-1 px-6 py-4 rounded-lg text-gray-800 placeholder-gray-500 text-lg" 
+                  placeholder="Ваше имя" 
+                />
+                <input 
+                  className="flex-1 px-6 py-4 rounded-lg text-gray-800 placeholder-gray-500 text-lg" 
+                  placeholder="+7 (495) 888-00-00" 
+                />
+                <Button size="lg" className="bg-blue-500 hover:bg-blue-600 px-8 py-4 text-lg font-semibold">
+                  Оставить заявку
+                </Button>
+              </div>
+              <p className="text-sm text-blue-200">
+                Оставляя заявку, вы соглашаетесь на обработку персональных данных
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Reviews */}
       <section id="reviews" className="py-16 bg-white">
         <div className="container mx-auto px-4">
