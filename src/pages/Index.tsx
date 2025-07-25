@@ -2,8 +2,52 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    // Set page title and meta description dynamically
+    document.title = "Аккредитация медицинских работников под ключ с гарантией - МедАккредитация";
+    
+    // Add structured data for better SEO
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "МедАккредитация",
+      "description": "Периодическая аккредитация медработников под ключ с гарантией прохождения. Помощь врачам и фармацевтам в аккредитации.",
+      "url": "https://medaccreditation.ru",
+      "telephone": "+7 (800) 123-45-67",
+      "email": "info@medaccreditation.ru",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Медицинская, 15",
+        "addressLocality": "Москва",
+        "addressCountry": "RU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "55.755814",
+        "longitude": "37.617635"
+      },
+      "openingHours": "Mo-Fr 09:00-18:00, Sa-Su 10:00-16:00",
+      "priceRange": "от 15000₽",
+      "sameAs": [
+        "https://t.me/medaccreditation"
+      ],
+      "serviceType": "Медицинская аккредитация",
+      "areaServed": "Россия"
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+    
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+  
   return (
     <div className="min-h-screen bg-medical-light">
       {/* Header */}
@@ -35,10 +79,10 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="animate-fade-in text-center lg:text-left">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
-                Периодическая аккредитация медицинских работников
+                <span className="text-medical-blue">Аккредитация медицинских работников под ключ</span> с гарантией прохождения 2025
               </h1>
               <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-blue-100">
-                Полное сопровождение процесса аккредитации. Гарантируем успешное прохождение или возврат средств.
+                Периодическая аккредитация медработников под ключ для врачей, фармацевтов, провизоров и медсестер. Помощь в подготовке документов и сопровождении. Не пройдете - вернем деньги.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Button size="lg" className="bg-white text-medical-blue hover:bg-gray-100 w-full sm:w-auto">
@@ -111,11 +155,11 @@ const Index = () => {
                 <div className="w-12 h-12 bg-medical-blue text-white rounded-lg flex items-center justify-center mb-4">
                   <Icon name="GraduationCap" size={24} />
                 </div>
-                <CardTitle>Повышение квалификации</CardTitle>
-                <CardDescription>Удостоверение с внесением в ФИС ФРДО</CardDescription>
+                <CardTitle>Непрерывное медицинское обучение</CardTitle>
+                <CardDescription>Повышение квалификации врачей и среднего медперсонала</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-medical-gray">Оформляем удостоверение о повышении квалификации с официальным внесением в федеральную информационную систему.</p>
+                <p className="text-medical-gray">Обучение по специальностям: лечебное дело, сестринское дело, фармция с официальным удостоверением.</p>
               </CardContent>
             </Card>
 
@@ -124,11 +168,11 @@ const Index = () => {
                 <div className="w-12 h-12 bg-medical-green text-white rounded-lg flex items-center justify-center mb-4">
                   <Icon name="FileText" size={24} />
                 </div>
-                <CardTitle>Подготовка документов</CardTitle>
-                <CardDescription>Заполнение заявления и портфолио</CardDescription>
+                <CardTitle>Помощь в подготовке документов</CardTitle>
+                <CardDescription>Оформление портфолио для аккредитации медработников</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-medical-gray">Подготавливаем портфолио, заполняем заявление на аккредитацию и отчет о профессиональной деятельности.</p>
+                <p className="text-medical-gray">Помощь в подготовке документов для аккредитации медицинских работников: портфолио, заявление, отчет о профдеятельности.</p>
               </CardContent>
             </Card>
 
@@ -137,11 +181,11 @@ const Index = () => {
                 <div className="w-12 h-12 bg-medical-blue text-white rounded-lg flex items-center justify-center mb-4">
                   <Icon name="CheckCircle" size={24} />
                 </div>
-                <CardTitle>Полное сопровождение</CardTitle>
-                <CardDescription>От подачи до получения свидетельства</CardDescription>
+                <CardTitle>Сопровождение аккредитации медработников</CardTitle>
+                <CardDescription>От подачи до получения свидетельства об аккредитации</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-medical-gray">Формируем полный пакет документов и решаем все возникающие вопросы в процессе аккредитации.</p>
+                <p className="text-medical-gray">Полное сопровождение аккредитации медработников: помощь в периодической аккредитации врачей, фармацевтов и медсестер.</p>
               </CardContent>
             </Card>
           </div>
@@ -215,7 +259,7 @@ const Index = () => {
             <Card className="border-medical-blue border-2 relative">
               <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-medical-blue">Популярный</Badge>
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Полное сопровождение аккредитации</CardTitle>
+                <CardTitle className="text-2xl">Аккредитация медработников цена</CardTitle>
                 <div className="text-4xl font-bold text-medical-blue mt-4">8 000 ₽</div>
                 <CardDescription>Все документы</CardDescription>
               </CardHeader>
@@ -238,7 +282,7 @@ const Index = () => {
 
             <Card>
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Периодическая аккредитация под ключ</CardTitle>
+                <CardTitle className="text-2xl">Аккредитация врачей под ключ стоимость</CardTitle>
                 <div className="text-4xl font-bold text-medical-blue mt-4">15 000 ₽</div>
                 <CardDescription>От А до Я</CardDescription>
               </CardHeader>
@@ -492,6 +536,43 @@ const Index = () => {
         </div>
       </section>
 
+      {/* FAQ Section with SEO Content */}
+      <section className="py-12 sm:py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-medical-dark mb-3 sm:mb-4">Часто задаваемые вопросы</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-medical-gray">Ответы на основные вопросы по аккредитации медработников</p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto space-y-4">
+            <div className="bg-medical-light p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-3 text-medical-dark">Сколько стоит аккредитация медицинских работников 2025?</h3>
+              <p className="text-medical-gray">Цена на аккредитацию медработников под ключ составляет от 15 000 рублей. Стоимость аккредитации врачей и цена на периодическую аккредитацию медицинских работников зависит от объема услуг.</p>
+            </div>
+            
+            <div className="bg-medical-light p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-3 text-medical-dark">Как получить помощь в аккредитации фармацевтов?</h3>
+              <p className="text-medical-gray">Помощь в аккредитации фармацевтов включает подготовку документов, обучение и сопровождение. Аккредитация фармацевтов под ключ 2025 обеспечивает 100% гарантию прохождения.</p>
+            </div>
+            
+            <div className="bg-medical-light p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-3 text-medical-dark">Особенности аккредитации по сестринскому делу?</h3>
+              <p className="text-medical-gray">Аккредитация по сестринскому делу и аккредитация медицинских сестер под ключ требует специальной подготовки. Помощь в аккредитации медицинских работников в Москве включает полное сопровождение.</p>
+            </div>
+            
+            <div className="bg-medical-light p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-3 text-medical-dark">Можно ли купить аккредитацию медсестры?</h3>
+              <p className="text-medical-gray">Купить аккредитацию медсестры невозможно, но можно получить профессиональную помощь в подготовке. Помощь в получении аккредитации медицинских работников включает легальное сопровождение процесса.</p>
+            </div>
+            
+            <div className="bg-medical-light p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-3 text-medical-dark">Особенности аккредитации фельдшера по лечебному делу 2025?</h3>
+              <p className="text-medical-gray">Аккредитация фельдшера лечебное дело 2025 и аккредитация фельдшера включает подготовку по специальности. Помощь в периодической аккредитации медработников обеспечивает успешное прохождение.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-medical-dark text-white py-8 sm:py-12">
         <div className="container mx-auto px-4">
@@ -504,12 +585,12 @@ const Index = () => {
               <p className="text-gray-300 text-sm sm:text-base">Профессиональное сопровождение медицинской аккредитации</p>
             </div>
             <div>
-              <h3 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg">Услуги</h3>
+              <h3 className="font-bold mb-3 sm:mb-4 text-base sm:text-lg">Аккредитация медработников</h3>
               <ul className="space-y-1 sm:space-y-2 text-gray-300 text-sm sm:text-base">
-                <li>Повышение квалификации</li>
-                <li>Подготовка документов</li>
-                <li>Портфолио</li>
-                <li>Консультации</li>
+                <li>Периодическая аккредитация врачей</li>
+                <li>Аккредитация фармацевтов</li>
+                <li>Аккредитация медсестер</li>
+                <li>Помощь в аккредитации</li>
               </ul>
             </div>
             <div>

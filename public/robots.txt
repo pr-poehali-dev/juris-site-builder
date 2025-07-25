@@ -1,3 +1,28 @@
+User-agent: *
+Allow: /
+
+# Главные страницы для индексации
+Allow: /
+Allow: /#services
+Allow: /#prices  
+Allow: /#reviews
+Allow: /#contacts
+
+# Запрет на скрипты и системные файлы
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.js$
+Disallow: /*.ts$
+Disallow: /*.tsx$
+
+# Карта сайта
+Sitemap: https://medaccreditation.ru/sitemap.xml
+
+# Яндекс.Вебмастер верификация
+User-agent: Yandex
+Allow: /
+
+# Google Search Console верификация  
 User-agent: Googlebot
 Allow: /
 
@@ -8,7 +33,4 @@ User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
-Allow: /
-
-User-agent: *
 Allow: /
