@@ -486,7 +486,7 @@ const Index = () => {
                 <p className="text-medical-gray text-sm leading-relaxed">
                   "Сотрудничаю с МАПК уже второй раз. В прошлом году проходил повышение квалификации, сейчас - аккредитацию. Отличная организация работы, все четко и в срок. Персональный менеджер всегда на связи, отвечает на все вопросы."
                 </p>
-                <div className="text-xs text-medical-gray mt-3 opacity-70">8 ноября 2024</div>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">8 ноября 2025</div>
               </CardContent>
             </Card>
 
@@ -509,7 +509,7 @@ const Index = () => {
                 <p className="text-medical-gray text-sm leading-relaxed">
                   "Долго откладывала аккредитацию, боялась бумажной волокиты. Подруга посоветовала МАПК. Сделали все под ключ - от обучения до подачи документов. Очень благодарна за профессиональную помощь! Прошла аккредитацию с первого раза."
                 </p>
-                <div className="text-xs text-medical-gray mt-3 opacity-70">3 ноября 2024</div>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">3 ноября 2025</div>
               </CardContent>
             </Card>
 
@@ -555,7 +555,7 @@ const Index = () => {
                 <p className="text-medical-gray text-sm leading-relaxed">
                   "Прохожу аккредитацию уже третий раз, но первый раз с МАПК. Раньше все делала сама - сколько нервов потратила! Здесь всё организовано четко: курсы, документы, подача заявления. Буду рекомендовать коллегам по отделению."
                 </p>
-                <div className="text-xs text-medical-gray mt-3 opacity-70">22 октября 2024</div>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">22 октября 2025</div>
               </CardContent>
             </Card>
 
@@ -578,7 +578,7 @@ const Index = () => {
                 <p className="text-medical-gray text-sm leading-relaxed">
                   "От всего отделения хочу поблагодарить МАПК! Организовали групповое обучение для 8 медсестер. Все девочки успешно прошли аккредитацию. Особая благодарность за терпение и профессионализм. Теперь только к вам будем обращаться!"
                 </p>
-                <div className="text-xs text-medical-gray mt-3 opacity-70">18 октября 2024</div>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">18 октября 2025</div>
               </CardContent>
             </Card>
 
