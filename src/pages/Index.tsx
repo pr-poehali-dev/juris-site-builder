@@ -159,7 +159,7 @@ const Index = () => {
                 <CardDescription>Повышение квалификации врачей и среднего медперсонала</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-medical-gray">Обучение по специальностям: лечебное дело, сестринское дело, фармция с официальным удостоверением.</p>
+                <p className="text-medical-gray">Подберем курс, который подойдет для периодической аккредитации.</p>
               </CardContent>
             </Card>
 
