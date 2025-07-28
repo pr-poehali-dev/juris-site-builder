@@ -553,7 +553,7 @@ const Index = () => {
                 <p className="text-medical-gray text-sm leading-relaxed">
                   "Прохожу аккредитацию уже третий раз, но первый раз с МАПК. Раньше все делала сама - сколько нервов потратила! Здесь всё организовано четко: курсы, документы, подача заявления. Буду рекомендовать коллегам по отделению."
                 </p>
-                <div className="text-xs text-medical-gray mt-3 opacity-70">22 октября 2025</div>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">22 октября 2024</div>
               </CardContent>
             </Card>
 
