@@ -463,7 +463,7 @@ const Index = () => {
                 <p className="text-medical-gray text-sm leading-relaxed">
                   "Проходила аккредитацию в 2024 году. Очень переживала, так как это был мой первый раз. Менеджер Анна проконсультировала по всем вопросам, помогла собрать портфолио. Документы оформили быстро, все прошло успешно! Рекомендую всем коллегам."
                 </p>
-                <div className="text-xs text-medical-gray mt-3 opacity-70">15 ноября 2024</div>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">15 июля 2025</div>
               </CardContent>
             </Card>
 
