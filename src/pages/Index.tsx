@@ -436,17 +436,162 @@ const Index = () => {
       </section>
 
       {/* Reviews */}
-      <section id="reviews" className="py-12 sm:py-16 bg-white">
+      <section id="reviews" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-medical-dark mb-3 sm:mb-4">Отзывы клиентов</h2>
-            <p className="text-base sm:text-lg lg:text-xl text-medical-gray">Более 500 довольных медицинских работников</p>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-medical-dark mb-4">Отзывы наших клиентов</h2>
+            <p className="text-xl text-medical-gray">Честные отзывы от медицинских работников, прошедших аккредитацию</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            <Card>
-              <CardHeader>
-                <div className="flex items-center space-x-2">
-                  <div className="w-12 h-12 bg-medical-blue text-white rounded-full flex items-center justify-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-medical-blue text-white rounded-full flex items-center justify-center font-semibold">
+                    Е
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-medical-dark">Елена Михайловна</h4>
+                    <p className="text-sm text-medical-gray">Врач-терапевт, стаж 12 лет</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                  ))}
+                </div>
+                <p className="text-medical-gray text-sm leading-relaxed">
+                  "Проходила аккредитацию в 2024 году. Очень переживала, так как это был мой первый раз. Менеджер Анна проконсультировала по всем вопросам, помогла собрать портфолио. Документы оформили быстро, все прошло успешно! Рекомендую всем коллегам."
+                </p>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">15 ноября 2024</div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-medical-green text-white rounded-full flex items-center justify-center font-semibold">
+                    А
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-medical-dark">Андрей Владимирович</h4>
+                    <p className="text-sm text-medical-gray">Врач-хирург, к.м.н.</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                  ))}
+                </div>
+                <p className="text-medical-gray text-sm leading-relaxed">
+                  "Сотрудничаю с МАПК уже второй раз. В прошлом году проходил повышение квалификации, сейчас - аккредитацию. Отличная организация работы, все четко и в срок. Персональный менеджер всегда на связи, отвечает на все вопросы."
+                </p>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">8 ноября 2024</div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-medical-blue text-white rounded-full flex items-center justify-center font-semibold">
+                    М
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-medical-dark">Мария Сергеевна</h4>
+                    <p className="text-sm text-medical-gray">Старшая медсестра</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                  ))}
+                </div>
+                <p className="text-medical-gray text-sm leading-relaxed">
+                  "Долго откладывала аккредитацию, боялась бумажной волокиты. Подруга посоветовала МАПК. Сделали все под ключ - от обучения до подачи документов. Очень благодарна за профессиональную помощь! Прошла аккредитацию с первого раза."
+                </p>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">3 ноября 2024</div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-medical-green text-white rounded-full flex items-center justify-center font-semibold">
+                    И
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-medical-dark">Игорь Петрович</h4>
+                    <p className="text-sm text-medical-gray">Врач-кардиолог</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                  ))}
+                </div>
+                <p className="text-medical-gray text-sm leading-relaxed">
+                  "Работаю в частной клинике, нужно было срочно пройти аккредитацию. Обратился в МАПК - все решили за 5 дней! Менеджер Дмитрий очень внимательный, помог разобраться со всеми нюансами. Цены адекватные, качество на высоте."
+                </p>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">28 октября 2024</div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-medical-blue text-white rounded-full flex items-center justify-center font-semibold">
+                    О
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-medical-dark">Ольга Александровна</h4>
+                    <p className="text-sm text-medical-gray">Врач-педиатр</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                  ))}
+                </div>
+                <p className="text-medical-gray text-sm leading-relaxed">
+                  "Прохожу аккредитацию уже третий раз, но первый раз с МАПК. Раньше все делала сама - сколько нервов потратила! Здесь всё организовано четко: курсы, документы, подача заявления. Буду рекомендовать коллегам по отделению."
+                </p>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">22 октября 2024</div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-medical-green text-white rounded-full flex items-center justify-center font-semibold">
+                    В
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-medical-dark">Валентина Ивановна</h4>
+                    <p className="text-sm text-medical-gray">Главная медсестра</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                  ))}
+                </div>
+                <p className="text-medical-gray text-sm leading-relaxed">
+                  "От всего отделения хочу поблагодарить МАПК! Организовали групповое обучение для 8 медсестер. Все девочки успешно прошли аккредитацию. Особая благодарность за терпение и профессионализм. Теперь только к вам будем обращаться!"
+                </p>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">18 октября 2024</div>
+              </CardContent>
+            </Card>
+
+          </div>
+          
+          <div className="text-center mt-12">
+            <div className="inline-flex items-center space-x-2 bg-medical-light px-6 py-3 rounded-lg">
+              <Icon name="TrendingUp" className="text-medical-green" size={20} />
+              <span className="text-medical-dark font-semibold">98.7% положительных отзывов</span>
+            </div>
+          </div>
+        </div>
+      </section>
                     <span className="font-bold">АП</span>
                   </div>
                   <div>
