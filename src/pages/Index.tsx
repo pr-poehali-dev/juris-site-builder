@@ -129,7 +129,7 @@ const Index = () => {
                 <Icon name="Users" size={20} className="sm:w-6 sm:h-6" />
               </div>
               <h3 className="font-bold text-sm sm:text-base lg:text-lg mb-1 sm:mb-2">Опытные эксперты</h3>
-              <p className="text-medical-gray text-xs sm:text-sm">Более 500 успешных аккредитаций</p>
+              <p className="text-medical-gray text-xs sm:text-sm">Более 7000 успешных аккредитаций</p>
             </div>
             <div className="text-center">
               <div className="bg-medical-green text-white w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
@@ -188,6 +188,56 @@ const Index = () => {
                 <p className="text-medical-gray">Полное сопровождение аккредитации медработников: помощь в периодической аккредитации врачей, фармацевтов и медсестер.</p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* License Section */}
+      <section className="py-16 bg-medical-light">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-medical-dark mb-4">Наша лицензия — ваша гарантия</h2>
+            <p className="text-xl text-medical-gray">Работаем официально на основании образовательной лицензии Правительства Санкт-Петербурга</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="bg-medical-green text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Shield" size={20} />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">Официальная лицензия № 4071</h3>
+                  <p className="text-medical-gray">Выдана Комитетом по образованию Правительства Санкт-Петербурга. Все наши документы имеют полную юридическую силу.</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="bg-medical-blue text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="CheckCircle" size={20} />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">Государственная регистрация</h3>
+                  <p className="text-medical-gray">АНО ДПО "МАПК" зарегистрирована как образовательная организация с правом ведения образовательной деятельности.</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="bg-medical-green text-white w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Award" size={20} />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2">Безсрочная лицензия</h3>
+                  <p className="text-medical-gray">Наша лицензия выдана без срока окончания действия, что гарантирует стабильность нашей работы.</p>
+                </div>
+              </div>
+            </div>
+            <div className="text-center">
+              <img 
+                src="https://cdn.poehali.dev/files/024ece80-575d-42bc-91c3-3dfa4e1c8263.jpg" 
+                alt="Лицензия АНО ДПО МАПК" 
+                className="w-full max-w-md mx-auto rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+                onClick={() => window.open('https://cdn.poehali.dev/files/024ece80-575d-42bc-91c3-3dfa4e1c8263.jpg', '_blank')}
+              />
+              <p className="text-sm text-medical-gray mt-2">Нажмите для увеличения</p>
+            </div>
           </div>
         </div>
       </section>
