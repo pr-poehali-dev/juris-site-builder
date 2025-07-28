@@ -78,8 +78,8 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="animate-fade-in text-center lg:text-left">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
-                <span className="text-medical-blue">Аккредитация медицинских работников под ключ</span> с гарантией прохождения 2025
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-white">
+                Аккредитация медицинских работников под ключ с гарантией прохождения 2025
               </h1>
               <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-blue-100">
                 Периодическая аккредитация медработников под ключ для врачей, фармацевтов, провизоров и медсестер. Помощь в подготовке документов и сопровождении. Не пройдете - вернем деньги.
@@ -89,7 +89,7 @@ const Index = () => {
                   <Icon name="FileCheck" className="mr-2" size={18} />
                   <span className="text-sm sm:text-base">Начать аккредитацию</span>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-medical-blue w-full sm:w-auto">
+                <Button size="lg" className="bg-white text-medical-blue hover:bg-gray-100 w-full sm:w-auto">
                   <Icon name="Phone" className="mr-2" size={18} />
                   <span className="text-sm sm:text-base">Бесплатная консультация</span>
                 </Button>
@@ -197,7 +197,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-medical-dark mb-4">Почему выбирают нас</h2>
-            <p className="text-xl text-medical-gray">Более 500 довольных медицинских работников</p>
+            <p className="text-xl text-medical-gray">Более 7000 довольных медицинских работников</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -235,7 +235,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <Card>
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Курс повышения квалификации</CardTitle>
+                <CardTitle className="text-2xl">Повышение квалификации</CardTitle>
                 <div className="text-4xl font-bold text-medical-blue mt-4">8 000 ₽</div>
                 <CardDescription>144 часа</CardDescription>
               </CardHeader>
@@ -319,7 +319,7 @@ const Index = () => {
                 <Icon name="Users" className="text-medical-blue mx-auto mb-2" size={32} />
                 <h3 className="text-lg font-semibold text-medical-gray mb-2">Всего специалистов</h3>
               </div>
-              <div className="text-4xl font-bold text-medical-blue mb-2">2,847</div>
+              <div className="text-4xl font-bold text-medical-blue mb-2">8,541</div>
               <div className="text-sm text-green-600">+12% за квартал</div>
             </Card>
             
@@ -328,7 +328,7 @@ const Index = () => {
                 <Icon name="CheckCircle" className="text-medical-green mx-auto mb-2" size={32} />
                 <h3 className="text-lg font-semibold text-medical-gray mb-2">Аккредитовано</h3>
               </div>
-              <div className="text-4xl font-bold text-medical-green mb-2">2,614</div>
+              <div className="text-4xl font-bold text-medical-green mb-2">7,842</div>
               <div className="text-sm text-medical-gray">91.8% от общего числа</div>
             </Card>
             
@@ -337,7 +337,7 @@ const Index = () => {
                 <Icon name="Clock" className="text-orange-500 mx-auto mb-2" size={32} />
                 <h3 className="text-lg font-semibold text-medical-gray mb-2">В процессе</h3>
               </div>
-              <div className="text-4xl font-bold text-orange-500 mb-2">233</div>
+              <div className="text-4xl font-bold text-orange-500 mb-2">699</div>
               <div className="text-sm text-medical-gray">Завершение до 31.12.2024</div>
             </Card>
           </div>
