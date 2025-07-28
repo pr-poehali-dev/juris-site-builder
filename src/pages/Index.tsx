@@ -576,7 +576,7 @@ const Index = () => {
                 <p className="text-medical-gray text-sm leading-relaxed">
                   "От всего отделения хочу поблагодарить МАПК! Организовали групповое обучение для 8 медсестер. Все девочки успешно прошли аккредитацию. Особая благодарность за терпение и профессионализм. Теперь только к вам будем обращаться!"
                 </p>
-                <div className="text-xs text-medical-gray mt-3 opacity-70">18 октября 2025</div>
+                <div className="text-xs text-medical-gray mt-3 opacity-70">18 сентября 2024</div>
               </CardContent>
             </Card>
 
